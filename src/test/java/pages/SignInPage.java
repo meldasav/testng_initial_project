@@ -40,8 +40,11 @@ public class SignInPage {
     @FindBy(css ="h3[class='social-title sds-heading--3']")
     public WebElement heading3;
 
-    @FindBy(xpath = "//li[@class='social-link']/a")
+    @FindBy(xpath = "//div[@class='column-2 sidebar-social-login']//a")
     public List<WebElement> socialMedia;
+
+//    @FindBy(xpath = "//li[@class='social-link']/a")
+//    public List<WebElement> socialMedia;
 
     @FindBy(css="a[class='sds-button google-button']")
     public WebElement signInGoogle;
