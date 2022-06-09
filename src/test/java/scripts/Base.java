@@ -7,8 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
-import pages.HomePage;
-import pages.SignInPage;
+import pages.*;
 import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
@@ -21,6 +20,10 @@ public class Base {
     SoftAssert softAssert;
     SignInPage signInPage;
     HomePage homePage;
+    HeroAppPage heroAppPage;
+    RediffHomePage rediffHomePage;
+    AmazonPage amazonPage;
+    TechGlobalPage techGlobalPage;
 
 
 
@@ -32,6 +35,10 @@ public class Base {
         softAssert = new SoftAssert();
         signInPage=new SignInPage(driver);
         homePage=new HomePage(driver);
+        heroAppPage=new HeroAppPage(driver);
+        rediffHomePage=new RediffHomePage(driver);
+        amazonPage=new AmazonPage(driver);
+        techGlobalPage=new TechGlobalPage(driver);
 
     }
 

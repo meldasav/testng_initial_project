@@ -37,7 +37,6 @@ public class _01CarTest extends Base {
         driver.get("https://www.cars.com/");
         homePage.signInLink.click();
         Assert.assertTrue(signInPage.heading3.isDisplayed() && signInPage.heading3.getText().equals("Connect with social"));
-        for (int i = 0; i < 3; i++) {
             Assert.assertTrue(signInPage.socialMedia.get(0).isDisplayed() && signInPage.socialMedia.get(0).isEnabled() &&
                     signInPage.socialMedia.get(0).getText().equals("Sign in with Facebook"));
             Assert.assertTrue(signInPage.socialMedia.get(1).isDisplayed() && signInPage.socialMedia.get(1).isEnabled() &&
@@ -45,7 +44,7 @@ public class _01CarTest extends Base {
             Assert.assertTrue(signInPage.socialMedia.get(2).isDisplayed() && signInPage.socialMedia.get(2).isEnabled() &&
                     signInPage.socialMedia.get(2).getText().equals("Sign in with Apple"));
 
-        }
+
     }
     @Test(priority = 4,description = "Validate user cannot sign in to Cars.com with invalid credentials")
     public void canNotSignIn(){

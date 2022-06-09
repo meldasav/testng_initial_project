@@ -1,6 +1,11 @@
 scripts/_01CarTest.class
 utilities/Driver.class
+pages/HeroAppPage.class
+scripts/_02_iFrames.class
+pages/HomePage.class
+scripts/_03AmazonTest.class
+pages/RediffHomePage.class
 utilities/Waiter.class
+pages/AmazonPage.class
 scripts/Base.class
 pages/SignInPage.class
-pages/HomePage.class

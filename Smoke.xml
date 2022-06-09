@@ -3,7 +3,9 @@
 <suite name="Smoke">
     <test name="Critical Functionalities">
         <classes>
+            <class name="scripts._03AmazonTest"/>
             <class name="scripts._01CarTest">
+
                 <methods>
                     <include name="login"/>
                     <exclude name="signINLink"/>
@@ -12,6 +14,7 @@
                     </exclude>
                 </methods>
             </class>
+
         </classes>
     </test>
 </suite>
