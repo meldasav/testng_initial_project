@@ -18,9 +18,8 @@ public class _04WindowHandle extends Base{
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.facebook.com/techglobalschool");
 
-
-
     }
+
 
 
 }

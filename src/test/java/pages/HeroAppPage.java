@@ -24,6 +24,20 @@ public class HeroAppPage {
     @FindBy(xpath ="//h3")
     public WebElement heading3;
 
+    @FindBy(id="file-upload")
+    public WebElement chooseFile;
+
+    @FindBy(id="file-submit")
+    public WebElement upload;
+
+    @FindBy(xpath = "//h3")
+    public WebElement fileUploadText;
+
+    @FindBy(id="uploaded-files")
+    public WebElement locators;
+
+    @FindBy(linkText = "sample.png")
+    public WebElement download;
 
     public void clickOnLink(String linkText) {
         for (WebElement link : links) {

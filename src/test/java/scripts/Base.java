@@ -24,6 +24,7 @@ public class Base {
     RediffHomePage rediffHomePage;
     AmazonPage amazonPage;
     TechGlobalPage techGlobalPage;
+    ComfyelitePage comfyelitePage;
 
 
 
@@ -39,7 +40,7 @@ public class Base {
         rediffHomePage=new RediffHomePage(driver);
         amazonPage=new AmazonPage(driver);
         techGlobalPage=new TechGlobalPage(driver);
-
+        comfyelitePage=new ComfyelitePage(driver);
     }
 
     @AfterMethod
