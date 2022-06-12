@@ -39,6 +39,21 @@ public class HeroAppPage {
     @FindBy(linkText = "sample.png")
     public WebElement download;
 
+    @FindBy(css="#table1 th")
+    public List<WebElement> sortableDataTableElements;
+
+    @FindBy(xpath = "//table[@id='table1']//th")
+    public List<WebElement> table1headers;
+
+    @FindBy(xpath = "//table[@id='table1']//tr[1]/td")
+    public List<WebElement> table1Row1;
+
+    @FindBy(xpath = "//table[@id='table1']//tr//td[2]")
+    public List<WebElement> table1Column2;
+
+    @FindBy(xpath = "//table[@id='table1']//td")
+    public List<WebElement> allCells;
+
     public void clickOnLink(String linkText) {
         for (WebElement link : links) {
             if (link.getText().equals(linkText)) {

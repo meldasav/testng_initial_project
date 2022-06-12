@@ -11,4 +11,10 @@ public class TechGlobalPage {
     }
     @FindBy(css="#img_0_comp-kixnxkbc")
     public WebElement faceBookIcon;
+
+    @FindBy(css="div[id='comp-kixny3ro'] span>span")
+    public WebElement techGlobalAddress;
+
+    @FindBy(css = "#comp-kvjohd5t5 span")
+    public WebElement registerSessionBox;
 }

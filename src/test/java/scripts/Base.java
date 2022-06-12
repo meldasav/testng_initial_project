@@ -25,6 +25,8 @@ public class Base {
     AmazonPage amazonPage;
     TechGlobalPage techGlobalPage;
     ComfyelitePage comfyelitePage;
+    CarvanaPage carvanaPage;
+    GooglePage googlePage;
 
 
 
@@ -41,6 +43,8 @@ public class Base {
         amazonPage=new AmazonPage(driver);
         techGlobalPage=new TechGlobalPage(driver);
         comfyelitePage=new ComfyelitePage(driver);
+        carvanaPage=new CarvanaPage();
+        googlePage=new GooglePage();
     }
 
     @AfterMethod
